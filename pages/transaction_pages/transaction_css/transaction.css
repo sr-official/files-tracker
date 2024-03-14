@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.container {
+	/* border : 1px solid red; */
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 2px;
+	text-align: center;
+}
+
+
+button {
+	padding: 8px 20px;
+	margin: 10px 0;
+	border : 1px solid ;
+	border-radius: 3px;
+	background: tomato;
+	color : #fff;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-size: 18px;
+	transition: all 0.3s ease-in;
+}
+
+button:hover {
+	background: powderblue;
+	color : #000;
+	border : 1px solid green;
+}

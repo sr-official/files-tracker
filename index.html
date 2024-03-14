@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Payment and Files Management</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container text-center">
+    <h1>Student Payment and Files Management</h1>
+	<div class="table-responsive">
+	<table id="studentsTable" class="table">
+        <thead>
+            <tr>
+                <th>Roll</th>
+                <th>Name</th>
+                <th>Show Files</th>
+                <th>Transactions History</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <!-- Student 1 -->
+        <tr>
+            <td>9111</td>
+            <td>Tanjina Taifa Puspita</td>
+            <td><a href="#" class="show-file-link" data-student="Tanjina Taifa Puspita">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Tanjina Taifa Puspita">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 2 -->
+        <tr>
+            <td>9112</td>
+            <td>Kazi Mohammed Ershad</td>
+            <td><a href="#" class="show-file-link" data-student="Kazi Mohammed Ershad">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Kazi Mohammed Ershad">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 3 -->
+        <tr>
+            <td>9113</td>
+            <td>Salma Akter</td>
+            <td><a href="#" class="show-file-link" data-student="Salma Akter">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Salma Akter">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 4 -->
+        <tr>
+            <td>9114</td>
+            <td>Md Sajid Akram</td>
+            <td><a href="#" class="show-file-link" data-student="Md Sajid Akram">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Sajid Akram">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 5 -->
+        <tr>
+            <td>9115</td>
+            <td>Farhan Israk Abid</td>
+            <td><a href="#" class="show-file-link" data-student="Farhan Israk Abid">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Farhan Israk Abid">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 6 -->
+        <tr>
+            <td>9116</td>
+            <td>Arpa Boidya</td>
+            <td><a href="#" class="show-file-link" data-student="Arpa Boidya">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Arpa Boidya">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 7 -->
+        <tr>
+            <td>9117</td>
+            <td>Mst Jannatul Naima</td>
+            <td><a href="#" class="show-file-link" data-student="Mst Jannatul Naima">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Mst Jannatul Naima">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 8 -->
+        <tr>
+            <td>9118</td>
+            <td>Soikat Acharjee</td>
+            <td><a href="#" class="show-file-link" data-student="Soikat Acharjee">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Soikat Acharjee">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 9 -->
+        <tr>
+            <td>9119</td>
+            <td>Zubair Ahmed Abid</td>
+            <td><a href="#" class="show-file-link" data-student="Zubair Ahmed Abid">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Zubair Ahmed Abid">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 10 -->
+        <tr>
+            <td>9120</td>
+            <td>Turjua Barua</td>
+            <td><a href="#" class="show-file-link" data-student="Turjua Barua">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Turjua Barua">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 11 -->
+        <tr>
+            <td>9121</td>
+            <td>Samira Arefin</td>
+            <td><a href="#" class="show-file-link" data-student="Samira Arefin">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Samira Arefin">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 12 -->
+        <tr>
+            <td>9122</td>
+            <td>Md Raihanul Islam</td>
+            <td><a href="#" class="show-file-link" data-student="Md Raihanul Islam">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Raihanul Islam">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 13 -->
+        <tr>
+            <td>9123</td>
+            <td>Md Mohaimenul Islam</td>
+            <td><a href="#" class="show-file-link" data-student="Md Mohaimenul Islam">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Mohaimenul Islam">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 14 -->
+        <tr>
+            <td>9124</td>
+            <td>Ramisa Binte Sultana</td>
+            <td><a href="#" class="show-file-link" data-student="Ramisa Binte Sultana">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Ramisa Binte Sultana">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 15 -->
+        <tr>
+            <td>9125</td>
+            <td>Iftekar Ahmed Ayman</td>
+            <td><a href="#" class="show-file-link" data-student="Iftekar Ahmed Ayman">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Iftekar Ahmed Ayman">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 16 -->
+        <tr>
+            <td>9126</td>
+            <td>Naznin Sultana</td>
+            <td><a href="#" class="show-file-link" data-student="Naznin Sultana">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Naznin Sultana">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 17 -->
+        <tr>
+            <td>9127</td>
+            <td>Shubeh Shadika Ikra</td>
+            <td><a href="#" class="show-file-link" data-student="Shubeh Shadika Ikra">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Shubeh Shadika Ikra">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 18 -->
+        <tr>
+            <td>9128</td>
+            <td>Tanvir Ahmed</td>
+            <td><a href="#" class="show-file-link" data-student="Tanvir Ahmed">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Tanvir Ahmed">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 19 -->
+        <tr>
+            <td>9129</td>
+            <td>Umma Aima</td>
+            <td><a href="#" class="show-file-link" data-student="Umma Aima">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Umma Aima">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 20 -->
+        <tr>
+            <td>9130</td>
+            <td>Dipta Bhattacharjee</td>
+            <td><a href="#" class="show-file-link" data-student="Dipta Bhattacharjee">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Dipta Bhattacharjee">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 21 -->
+        <tr>
+            <td>9131</td>
+            <td>Abriti Chowdhury</td>
+            <td><a href="#" class="show-file-link" data-student="Abriti Chowdhury">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Abriti Chowdhury">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 22 -->
+        <tr>
+            <td>9132</td>
+            <td>Ummey Honey Tanzila</td>
+            <td><a href="#" class="show-file-link" data-student="Ummey Honey Tanzila">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Ummey Honey Tanzila">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 23 -->
+        <tr>
+            <td>9133</td>
+            <td>Md Abdur Rahim</td>
+            <td><a href="#" class="show-file-link" data-student="Md Abdur Rahim">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Abdur Rahim">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 24 -->
+        <tr>
+            <td>9134</td>
+            <td>Nusrat Jahan Sraboni</td>
+            <td><a href="#" class="show-file-link" data-student="Nusrat Jahan Sraboni">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Nusrat Jahan Sraboni">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 25 -->
+        <tr>
+            <td>9135</td>
+            <td>Joy Gopal Dey Prodipta</td>
+            <td><a href="#" class="show-file-link" data-student="Joy Gopal Dey Prodipta">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Joy Gopal Dey Prodipta">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 26 -->
+        <tr>
+            <td>9136</td>
+            <td>Joy Ram Dey Sudipta</td>
+            <td><a href="#" class="show-file-link" data-student="Joy Ram Dey Sudipta">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Joy Ram Dey Sudipta">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 27 -->
+        <tr>
+            <td>9137</td>
+            <td>Tahera Shamila Taky</td>
+            <td><a href="#" class="show-file-link" data-student="Tahera Shamila Taky">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Tahera Shamila Taky">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 28 -->
+        <tr>
+            <td>9138</td>
+            <td>Rakibul Hossain Bhuiya</td>
+            <td><a href="#" class="show-file-link" data-student="Rakibul Hossain Bhuiya">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Rakibul Hossain Bhuiya">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 29 -->
+        <tr>
+            <td>9139</td>
+            <td>Liza Akter</td>
+            <td><a href="#" class="show-file-link" data-student="Liza Akter">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Liza Akter">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 30 -->
+        <tr>
+            <td>9140</td>
+            <td>Tasif Hossin Opu</td>
+            <td><a href="#" class="show-file-link" data-student="Tasif Hossin Opu">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Tasif Hossin Opu">Transaction History</a></td>
+        </tr>
+        
+        <!-- Studnet 31 -->
+        <tr>
+            <td>9141</td>
+            <td>Tafiqul Bari Sadid</td>
+            <td><a href="#" class="show-file-link" data-student="Tafiqul Bari Sadid">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Tafiqul Bari Sadid">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 32 -->
+        <tr>
+            <td>9142</td>
+            <td>Mohammed Ashraful Islam</td>
+            <td><a href="#" class="show-file-link" data-student="Mohammed Ashraful Islam">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Mohammed Ashraful Islam">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 33 -->
+        <tr>
+            <td>9143</td>
+            <td>Ahammed Ullah</td>
+            <td><a href="#" class="show-file-link" data-student="Ahammed Ullah">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Ahammed Ullah">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 34 -->
+        <tr>
+            <td>9144</td>
+            <td>Suraia Afroz</td>
+            <td><a href="#" class="show-file-link" data-student="Suraia Afroz">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Suraia Afroz">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 35 -->
+        <tr>
+            <td>9145</td>
+            <td>Umme Asma</td>
+            <td><a href="#" class="show-file-link" data-student="Umme Asma">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Umme Asma">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 36 -->
+        <tr>
+            <td>9146</td>
+            <td>Md Saydur Rahman</td>
+            <td><a href="#" class="show-file-link" data-student="Md Saydur Rahman">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Saydur Rahman">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 37 -->
+        <tr>
+            <td>9147</td>
+            <td>Md Ariful Islam</td>
+            <td><a href="#" class="show-file-link" data-student="Md Ariful Islam">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Ariful Islam">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 38 -->
+        <tr>
+            <td>9148</td>
+            <td>Md Abu Faisal Azad</td>
+            <td><a href="#" class="show-file-link" data-student="Md Abu Faisal Azad">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Md Abu Faisal Azad">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 39 -->
+        <tr>
+            <td>9149</td>
+            <td>Afsana Hoque</td>
+            <td><a href="#" class="show-file-link" data-student="Student 39">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 39">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 40 -->
+        <tr>
+            <td>9150</td>
+            <td>Samanta Patoary</td>
+            <td><a href="#" class="show-file-link" data-student="Student 40">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 40">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 41 -->
+        <tr>
+            <td>9151</td>
+            <td>Abrar Hamim</td>
+            <td><a href="#" class="show-file-link" data-student="Student 41">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 41">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 42 -->
+        <tr>
+            <td>9152</td>
+            <td>Tehami Khan</td>
+            <td><a href="#" class="show-file-link" data-student="Student 42">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 42">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 43 -->
+        <tr>
+            <td>9153</td>
+            <td>Md Ahsanuzzaman Nayon</td>
+            <td><a href="#" class="show-file-link" data-student="Student 43">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 43">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 44 -->
+        <tr>
+            <td>9154</td>
+            <td>Jannatul Fardouse Oishi</td>
+            <td><a href="#" class="show-file-link" data-student="Student 44">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 44">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 45 -->
+        <tr>
+            <td>9155</td>
+            <td>Mohammad Mehedi Hasan</td>
+            <td><a href="#" class="show-file-link" data-student="Student 45">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 45">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 46 -->
+        <tr>
+            <td>9156</td>
+            <td>Sidratul Muntaha</td>
+            <td><a href="#" class="show-file-link" data-student="Student 46">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 46">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 47 -->
+        <tr>
+            <td>9157</td>
+            <td>Mohammad Sayed Uzzaman</td>
+            <td><a href="#" class="show-file-link" data-student="Student 47">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 47">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 48 -->
+        <tr>
+            <td>9158</td>
+            <td>Md Saidul Haque</td>
+            <td><a href="#" class="show-file-link" data-student="Student 48">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 48">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 49 -->
+        <tr>
+            <td>9159</td>
+            <td>Shahedul Anwar</td>
+            <td><a href="#" class="show-file-link" data-student="Student 49">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 49">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 50 -->
+        <tr>
+            <td>9160</td>
+            <td>Nawer Alam Siddique</td>
+            <td><a href="#" class="show-file-link" data-student="Student 50">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 50">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 51 -->
+        <tr>
+            <td>9161</td>
+            <td>Ahmed Al Seyam</td>
+            <td><a href="#" class="show-file-link" data-student="Student 51">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 51">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 52 -->
+        <tr>
+            <td>9162</td>
+            <td>Ashraful Jilan Rabbi</td>
+            <td><a href="#" class="show-file-link" data-student="Student 52">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 52">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 53 -->
+        <tr>
+            <td>9163</td>
+            <td>Pratoy Majumdar</td>
+            <td><a href="#" class="show-file-link" data-student="Student 53">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 53">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 54 -->
+        <tr>
+            <td>9164</td>
+            <td>Tafsir Ebne Sayed</td>
+            <td><a href="#" class="show-file-link" data-student="Student 54">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 54">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 55 -->
+        <tr>
+            <td>9165</td>
+            <td>Md Foysal</td>
+            <td><a href="#" class="show-file-link" data-student="Student 55">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 55">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 56 -->
+        <tr>
+            <td>9166</td>
+            <td>Omar Faruk Tanim</td>
+            <td><a href="#" class="show-file-link" data-student="Student 56">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 56">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 57 -->
+        <tr>
+            <td>9167</td>
+            <td>Sheikh Rifat Arian</td>
+            <td><a href="#" class="show-file-link" data-student="Student 57">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 57">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 58 -->
+        <tr>
+            <td>9168</td>
+            <td>Sanjida Sultana Any</td>
+            <td><a href="#" class="show-file-link" data-student="Student 58">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 58">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 59 -->
+        <tr>
+            <td>9169</td>
+            <td>Walid Mahmud</td>
+            <td><a href="#" class="show-file-link" data-student="Student 59">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 59">Transaction History</a></td>
+        </tr>
+
+        <!-- Studnet 60 -->
+        <tr>
+            <td>9170</td>
+            <td>Afifa Islam</td>
+            <td><a href="#" class="show-file-link" data-student="Student 60">Show Files</a></td>
+            <td><a href="#" class="transaction-link" data-student="Student 60">Transaction History</a></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
