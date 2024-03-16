@@ -1,7 +1,7 @@
 // Sample student transaction data
 const studentTransactions = [
-	{ depositDate: '0000-00-00', depositAmount: '00', deductDate: '0000-00-00', deductedAmount: '00' },
-	{ depositDate: '0000-00-00', depositAmount: '00', deductDate: '0000-00-00', deductedAmount: '00' },
+	{ depositDate: '16-03-2024', depositAmount: 50, deductDate: '00-00-0000', deductedAmount: '00' },
+	{ depositDate: '00-00-000', depositAmount: '00', deductDate: '00-00-0000', deductedAmount: '00' },
 	// Add more student transaction data as needed
 ];
 
