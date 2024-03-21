@@ -1,6 +1,6 @@
 // Sample data
 const filesData = [
-  { accounting: '---', business: '---', english: '---', history: '---', management: '---' },
+  { accounting: '---', business: 'Ch : 02', english: '---', history: 'Ch : 07 - Ch : 12', management: '01. Planning' },
   { accounting: '---', business: '---', english: '---', history: '---', management: '---' },
   { accounting: '---', business: '---', english: '---', history: '---', management: '---' },
   { accounting: '---', business: '---', english: '---', history: '---', management: '---' },
