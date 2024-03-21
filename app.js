@@ -150,7 +150,7 @@ function handleShowFileLinkClick(studentName) {
 	else if( password === 'password38'){
 		window.location.href = `pages/file_pages/9138.html?student=${studentName}`;
 	} 
-	else if( password === 'password39'){
+	else if( password === 'Liza'){
 		window.location.href = `pages/file_pages/9139.html?student=${studentName}`;
 	} 
 	else if( password === 'password40'){
@@ -345,7 +345,7 @@ function handleTransactionLinkClick(studentName) {
 	else if(password === 'password38'){
 		window.location.href = `pages/transaction_pages/9138.html?student=${studentName}`;
 	}
-	else if(password === 'password39'){
+	else if(password === 'Liza'){
 		window.location.href = `pages/transaction_pages/9139.html?student=${studentName}`;
 	}
 	else if(password === 'password40'){
