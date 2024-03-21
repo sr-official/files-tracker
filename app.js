@@ -28,7 +28,7 @@ const studentPasswords = {
 	"Joy Ram Dey Sudipta" : "password36",
 	"Tahera Shamila Taky" : "password37",
 	"Rakibul Hossain Bhuiya" : "password38",
-	"Liza Akter" : "password39",
+	"Liza Akter" : "Liza",
 	"Tasif Hossin Opu" : "password40",
 	"Tafiqul Bari Sadid" : "password41",
 	"Mohammed Ashraful Islam" : "password42",
